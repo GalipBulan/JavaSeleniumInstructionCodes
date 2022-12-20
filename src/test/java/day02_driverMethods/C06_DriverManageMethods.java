@@ -14,7 +14,7 @@ public class C06_DriverManageMethods {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         // Her projenin basina ustteki 4 asamayi yapmak zorundayiz
-        // Gittigimiz sayfa acilincaya veya aradigimiz web elemen bulununcaya kadar driver in bekleyecegi maximum sureyi belirler.
+        // Gittigimiz sayfa acilincaya veya aradigimiz web elemen bulununcaya kadar driver in bekleyecegi maximum sureyi belirler..
 
         driver.get("https://www.kar360.com");
         driver.close();

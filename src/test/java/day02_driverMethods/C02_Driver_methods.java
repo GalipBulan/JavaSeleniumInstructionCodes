@@ -36,7 +36,7 @@ public class C02_Driver_methods {
 
         Thread.sleep(3000);
 
-        driver.close(); // Acilmis olan Browser i kapatir.
+        driver.close(); // Acilmis olan Browser i kapatir..
 
 
     }

@@ -8,7 +8,7 @@ public class C01_DriverMethods {
     public static void main(String[] args) throws InterruptedException {
 
         // Biz browser'lari olusturdugumuz driver sayesinde otomate edebiliyoruz
-        // Bunun icin her testin basinda mutlaka driver objesi olusturacagiz
+        // Bunun icin her testin basinda mutlaka driver objesi olusturacagiz.
 
         System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver");
         WebDriver driver= new ChromeDriver();

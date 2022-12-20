@@ -13,7 +13,7 @@ public class C03_Driver_methods {
 
         driver.get("https://www.amazon.com");
 
-        System.out.println(driver.getPageSource()); // Sayfanin kaynak kodlarini getirir.
+        System.out.println(driver.getPageSource()); // Sayfanin kaynak kodlarini getirir..
 
         String pageSource = driver.getPageSource();
 

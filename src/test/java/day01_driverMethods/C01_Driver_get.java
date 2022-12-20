@@ -30,7 +30,7 @@ public class C01_Driver_get {
             bu satirdan dolayi bos bir browser acilir
             3- driver.get(url) driver'i yazdigimiz url'e goturur
             url yazarken www yazmasak calisir
-            ancak https:// yazmazsak method calismaz
+            ancak https:// yazmazsak method calismaz.
 
 
 

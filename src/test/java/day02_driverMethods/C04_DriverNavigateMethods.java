@@ -13,7 +13,7 @@ public class C04_DriverNavigateMethods {
 
         driver.manage().window().maximize();
 
-        // driver.navigate().to  // get ile ayni islevi yapar
+        // driver.navigate().to  // get ile ayni islevi yapar.
 
         driver.navigate().to("https://www.amazon.com");
 

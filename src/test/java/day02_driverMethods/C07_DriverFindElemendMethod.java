@@ -37,5 +37,6 @@ public class C07_DriverFindElemendMethod {
 
         Thread.sleep(4000);
         driver.close();
+        driver.quit();
     }
 }
