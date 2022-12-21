@@ -10,13 +10,13 @@ public class C01_DriverMethods {
         // Biz browser'lari olusturdugumuz driver sayesinde otomate edebiliyoruz
         // Bunun icin her testin basinda mutlaka driver objesi olusturacagiz.
 
-        System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver.exe");
         WebDriver driver= new ChromeDriver();
 
         driver.get("https://www.amazon.com");
         // acilan sayfanin basliginin amazon icerdigini test edin
 
-        String expectedKelime= "amazon";
+        String expectedKelime= "Amazon";
         String actualResult= driver.getTitle();
 
         if (actualResult.contains(expectedKelime)){
