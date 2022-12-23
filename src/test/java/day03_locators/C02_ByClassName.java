@@ -28,7 +28,8 @@ public class C02_ByClassName {
 
         System.out.println(fiyatListesi);
 
-
+        // Bunun icin for-each loop kullanarak
+        // her bir webelement uzerindeki yazilari tek tek yazdirmaliyiz.
 
         for (WebElement each:fiyatListesi
              ) {
@@ -36,6 +37,29 @@ public class C02_ByClassName {
             System.out.print(each.getText()+ " ");
 
         }
+
+        // en yuksek fiyati bulabilmek icin java bilgimizi kullanmaliyiz
+        // 1- web elementlerden getText ile fiyati String olarak alin
+        // 2- string fiyati kiyaslama yapabilmek icin Integer'a cevirin
+        // 3- en yuksek fiyati bulup yazdirin
+
+        String fiyatStr;
+        Integer fiyatInt;
+        Integer enYuksekFiyat=0;
+
+        for (WebElement each: fiyatListesi
+        ) {
+
+            fiyatStr= each.getText();
+            fiyatInt=Integer.parseInt(fiyatStr);
+
+            if (fiyatInt>enYuksekFiyat){
+                enYuksekFiyat=fiyatInt;
+            }
+
+        }
+        System.out.println("");
+        System.out.println("En yuksek urun fiyati : " + enYuksekFiyat);
 
         Thread.sleep(4000);
 
